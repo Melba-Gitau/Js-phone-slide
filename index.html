@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Js phone</title>
+</head>
+<body>
+    <div class = "main">
+        <nav>
+        <div class = "logo">
+            <img src = "pngfind.com-galaxy-png-transparent-4058.png">
+        </div>
+        <div class = "links">
+            <ul>
+                <li><a href = "">Home</a></li>
+                <li><a href = "">Phone</a></li>
+                <li><a href = "">Accessories</a></li>
+                <li><a href = "">Cart</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div class = "info">
+            <div class = "overlay"></div>
+            <img src = "pngfind.com-galaxy-png-transparent-4362.png" class = "mobile">
+            <div id = "circle">
+            <div class = "feature one">
+                <img src = "SeekPng.com_camera-icon-png-white_3016237.png">
+                <div>
+                    <h1>Camera</h1>
+                    <p>12MP, wide angle lens</p>
+                </div>
+            </div>
+            <div class = "feature two">
+                <img src = "pngaaa.com-601200.png">
+                <div>
+                    <h1>Processor</h1>
+                    <p>Snapdragon Octa-core 11nm</p>
+                </div>
+            </div>
+            <div class = "feature three">
+                <img src = "PngItem_794675.png">
+                <div>
+                    <h1>Display</h1>
+                    <p>6.5" Mini-Drop Fullscreen</p>
+                </div>
+            </div>
+            <div class = "feature four">
+                <img src = "—Pngtree—battery icon_4642046.png">
+                <div>
+                    <h1>Battery</h1>
+                    <p>5000mAh,720hrs</p>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class = "btns">
+            <img src = "pngkit_top-arrow-png_2557792.png" id = "upbtn">
+            <h3>Features</h3>
+            <img src = "pngwing.com.png" id="downbtn">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick= function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue =rotateSum;
+        }
+        downbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue =rotateSum;
+        }
+    </script>
+</body>
+</html>
